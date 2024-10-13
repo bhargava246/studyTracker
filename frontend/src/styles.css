@@ -1,0 +1,113 @@
+/* Default day mode styles */
+.App {
+  background-color: #f5f5f5; /* Light gray background */
+  color: #333; /* Darker text for contrast */
+  font-family: 'Roboto', sans-serif; /* Use a modern font */
+  min-height: 100vh;
+  padding: 20px;
+  transition: background-color 0.5s, color 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Night mode styles */
+.night-mode {
+  background-color: #121212; /* Dark background for night mode */
+  color: #e0e0e0; /* Lighter text in night mode */
+}
+
+/* Box styles for displaying information */
+.info-box {
+  background-color: #ffffff; /* White boxes in day mode */
+  border: 1px solid #ddd; /* Subtle border for the boxes */
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  max-width: 600px; /* Limit box width */
+  width: 100%;
+  transition: background-color 0.5s, box-shadow 0.3s;
+}
+
+/* Box styles for night mode */
+.night-mode .info-box {
+  background-color: #1e1e1e; /* Dark background in night mode */
+  border-color: #444; /* Subtle border for night mode */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6); /* Stronger shadow in night mode */
+}
+
+/* Button styles */
+button {
+  margin: 10px;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #3498db; /* Light blue color */
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Heading styles */
+h1, h2, p {
+  margin: 20px 0;
+}
+
+/* Typography */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.night-mode h1 {
+  color: #ecf0f1;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #34495e;
+}
+
+.night-mode h2 {
+  color: #bdc3c7;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Additional spacing for layout */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+button {
+  align-self: center;
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.info-box {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
